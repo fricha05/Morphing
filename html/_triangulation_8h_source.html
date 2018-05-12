@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet L3 Morphing:  Fichier source de /home/florian/Documents/Projet Morphing/projet-l3-morphing/include/Triangulation.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet L3 Morphing
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Morphing - Florian Richard - Joachim Bocaz-coeffe</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0578a36bf84ce0248de4a56299054455.html">Projet Morphing</a></li><li class="navelem"><a class="el" href="dir_c67ba12fe4b6134a42c755c7bf9c563b.html">projet-l3-morphing</a></li><li class="navelem"><a class="el" href="dir_fa712fb4bfd959a405b661631366c4db.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Triangulation.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Auteur : Florian Richard - Joachim Bocaz-coeffe</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Creation : 18-12-2017</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef __TRIANGULATION__</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define __TRIANGULATION__</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_matrice.html">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_matrice.html">Matrice</a></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> A, B, C, D, E, F, G, H, I;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}<a class="code" href="struct_matrice.html">Matrice</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_point.html">   33</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_point.html">Point</a></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> X,Y;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}<a class="code" href="struct_point.html">Point</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_triangle.html">   42</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_triangle.html">Triangle</a></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="struct_point.html">Point</a> A, B, C;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}<a class="code" href="struct_triangle.html">Triangle</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_triangle_in_list.html">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_triangle_in_list.html">TriangleInList</a></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_triangle_in_list.html">TriangleInList</a>* next;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="struct_triangle.html">Triangle</a> current;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}<a class="code" href="struct_triangle_list.html">TriangleList</a>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="struct_triangle_list.html">TriangleList</a>* addTriangleInList(<a class="code" href="struct_triangle_list.html">TriangleList</a>* list, <a class="code" href="struct_triangle.html">Triangle</a> T);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="struct_matrice.html">Matrice</a> creationMatrice(<a class="code" href="struct_triangle.html">Triangle</a> t, <a class="code" href="struct_point.html">Point</a> p);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">int</span> isInsideCircle(<a class="code" href="struct_matrice.html">Matrice</a> m);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> initializePoint(<a class="code" href="struct_point.html">Point</a>* P, <span class="keywordtype">int</span> X, <span class="keywordtype">int</span> Y);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> initializeTriangle(<a class="code" href="struct_triangle.html">Triangle</a>* t, <a class="code" href="struct_point.html">Point</a> A, <a class="code" href="struct_point.html">Point</a> B, <a class="code" href="struct_point.html">Point</a> C);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">int</span> pointInTriangle(<a class="code" href="struct_point.html">Point</a> P, <a class="code" href="struct_triangle.html">Triangle</a> T);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="struct_triangle.html">Triangle</a> inThisTriangle(<a class="code" href="struct_triangle_list.html">TriangleList</a>* list, <a class="code" href="struct_point.html">Point</a> P);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<a class="code" href="struct_triangle_list.html">TriangleList</a>* deleteTriangle(<a class="code" href="struct_triangle_list.html">TriangleList</a>* list, <a class="code" href="struct_triangle.html">Triangle</a> T);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> printTriangleList(<a class="code" href="struct_triangle_list.html">TriangleList</a>* list);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="struct_triangle_list.html">TriangleList</a>* popTriangles(<a class="code" href="struct_triangle_list.html">TriangleList</a>* list, <a class="code" href="struct_point.html">Point</a> P);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<a class="code" href="struct_triangle_list.html">TriangleList</a>* flip(<a class="code" href="struct_triangle_list.html">TriangleList</a>* list, <a class="code" href="struct_point.html">Point</a> P);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<a class="code" href="struct_triangle_list.html">TriangleList</a>* initTrianglesRight(<a class="code" href="struct_triangle_list.html">TriangleList</a>* listLeft, <a class="code" href="struct_point.html">Point</a> PointLeft, <a class="code" href="struct_point.html">Point</a> PointRight);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="struct_triangle_in_list_html"><div class="ttname"><a href="struct_triangle_in_list.html">TriangleInList</a></div><div class="ttdef"><b>Definition:</b> Triangulation.h:52</div></div>
+<div class="ttc" id="struct_point_html"><div class="ttname"><a href="struct_point.html">Point</a></div><div class="ttdef"><b>Definition:</b> Triangulation.h:33</div></div>
+<div class="ttc" id="struct_triangle_list_html"><div class="ttname"><a href="struct_triangle_list.html">TriangleList</a></div></div>
+<div class="ttc" id="struct_triangle_html"><div class="ttname"><a href="struct_triangle.html">Triangle</a></div><div class="ttdef"><b>Definition:</b> Triangulation.h:42</div></div>
+<div class="ttc" id="struct_matrice_html"><div class="ttname"><a href="struct_matrice.html">Matrice</a></div><div class="ttdef"><b>Definition:</b> Triangulation.h:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
